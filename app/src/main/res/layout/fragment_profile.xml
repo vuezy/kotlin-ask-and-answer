@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent"
+    android:padding="15dp"
+    tools:context=".views.fragments.ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textSize="34sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/textEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textSize="22sp"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textName"/>
+
+        <View
+            android:id="@+id/viewPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="@drawable/bg_points"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textEmail"/>
+
+        <TextView
+            android:id="@+id/textLabelPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/points"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@id/viewPoints"
+            app:layout_constraintTop_toTopOf="@id/viewPoints"/>
+
+        <TextView
+            android:id="@+id/textPoints"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/_0"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintStart_toStartOf="@id/textLabelPoints"
+            app:layout_constraintEnd_toEndOf="@id/viewPoints"
+            app:layout_constraintTop_toBottomOf="@id/textLabelPoints"
+            app:layout_constraintBottom_toBottomOf="@id/viewPoints"/>
+
+        <View
+            android:id="@+id/viewCredits"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:background="@drawable/bg_credits"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewPoints"/>
+
+        <TextView
+            android:id="@+id/textLabelCredits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/credits"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@id/viewCredits"
+            app:layout_constraintTop_toTopOf="@id/viewCredits"/>
+
+        <TextView
+            android:id="@+id/textCredits"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/_0"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintStart_toStartOf="@id/textLabelCredits"
+            app:layout_constraintEnd_toEndOf="@id/viewCredits"
+            app:layout_constraintTop_toBottomOf="@id/textLabelCredits"/>
+
+        <TextView
+            android:id="@+id/textCreditsExplanation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/credits_explanation_1"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="@id/textLabelCredits"
+            app:layout_constraintEnd_toEndOf="@id/viewCredits"
+            app:layout_constraintTop_toBottomOf="@id/textCredits"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/credits_explanation_2"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintStart_toStartOf="@id/textLabelCredits"
+            app:layout_constraintEnd_toEndOf="@id/viewCredits"
+            app:layout_constraintTop_toBottomOf="@id/textCreditsExplanation"
+            app:layout_constraintBottom_toBottomOf="@id/viewCredits"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
